@@ -1,4 +1,5 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
+
 // function CuboidMaker(attributes) {
 //     this.length = attributes.length;
 //     this.width = attributes.width;
@@ -24,6 +25,14 @@ class RefactorCuboidMaker{
         this.length = cuboidMakerAttrs.length;
         this.width = cuboidMakerAttrs.width;
         this.height = cuboidMakerAttrs.height;
+    }
+
+    volume(){
+        return this.length * this.width * this.height;
+    }
+
+    surfaceArea(){
+        return 2 * ((this.length * this.width) + (this.length * this.height) + (this.width * this.height));
     }
 }
 
