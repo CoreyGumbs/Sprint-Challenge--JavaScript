@@ -40,11 +40,14 @@ console.log(consume('Corey', 'Gumbs', greeting));
 
 // Explanation: 
 
-```
-Nested function can access the internal variable because the variabl is considered a local scope variable within the function. 
+/*
+Corey Gumbs  - Answer/Explanation
+*/
+const explanation = 
+`Nested function can access the internal variable because the variable is considered a local scope variable within the main function. 
 Any variable declared within a function is accessible to all variables/bjects/functions that are declared within that particular function. 
-basically, any variable declared within a function (Parent), is accessible to a nested function (child) but not vice versa (Child function variable => Parent function). 
-```
+basically, any variable declared within a main/parent function (Parent), is accessible to a nested function (child) but not vice versa (Child function variable !=> Parent function.`
+console.log(explanation);
 
 const external = "I'm outside the function";
 
