@@ -106,11 +106,8 @@ console.log(contactInfo);
 const unisWithUni = [];
 
 for(i=0; i < universities.length; i++){
-  if(universities[i].includes('Uni')){
-    unisWithUni.push(universities[i]);
-  };
+  universities[i].includes('Uni') ? unisWithUni.push(universities[i]) : false;
 }
-
 console.log(unisWithUni);
 
 
@@ -158,7 +155,9 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
-zooAnimals.filter( animal => animal.population<5);
+zooAnimals.filter( animal => {
+  animal.population <5 ? lowPopulationAnimals.push(animal) : false
+});
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
@@ -166,7 +165,8 @@ console.log(lowPopulationAnimals);
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-const populationTotal = 0;
+const populationTotal = zooAnimals.reduce((acc, animal) => acc + animal.population, 0);;
+
 console.log(populationTotal);
 
 
