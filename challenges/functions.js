@@ -21,10 +21,13 @@ console.log(consume('Hello', 'World!!', stringify));
 */
 
 const add = (x, y) => x + y;
-const multiply = (x , y) => x + y;
+const multiply = (x , y) => x * y;
 const greeting =  (firstName, lastName) => `Hello ${firstName} ${lastName}, nice to meet you!`;
 
 console.log(consume(20, 5, add));
+console.log(consume(5, 60, multiply));
+console.log(consume('Corey', 'Gumbs', greeting));
+
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 // console.log(consume(2, 2, add)); // 4
 // console.log(consume(10, 16, multiply)); // 160
