@@ -43,8 +43,8 @@ const cuboid2 = new RefactorCuboidMaker({
 })
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-console.log("Class Cubioid ", cuboid2.volume()); // 100
-console.log("Class Cubioid ", cuboid2.surfaceArea()); // 130
+console.log("Cubioid volume: ", cuboid2.volume()); // 100
+console.log("Cubioid surface area: ", cuboid2.surfaceArea()); // 130
 
 // Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area.
 
@@ -62,9 +62,9 @@ class CubeMaker extends RefactorCuboidMaker{
 }
 
 const cube = new CubeMaker({
-    length: 4,
+    length: 5,
     width: 5,
     height: 5
 })
-console.log(cube.volume());
-console.log(cube.cubeSurfaceArea());
+console.log("Cube volume: ", cube.volume());
+console.log("Cube surface area: ", cube.cubeSurfaceArea());
